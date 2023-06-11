@@ -52,7 +52,7 @@ CREATE TABLE data.Brand (
 
 CREATE TABLE data.Size (
     Id serial PRIMARY KEY,
-    Size int
+    Size text
 );
 
 CREATE TABLE data.Gender (
