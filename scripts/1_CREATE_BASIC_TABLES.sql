@@ -7,7 +7,7 @@ CREATE TABLE data.Address (
     Frame_number integer,
     Apartment_number integer,
     Zip_code text,
-    User_id int UNIQUE NOT NULL
+    User_id int NOT NULL
 );
 
 CREATE TABLE data.User (
@@ -16,7 +16,7 @@ CREATE TABLE data.User (
   Surname text,
   Email text,
   Phone VARCHAR(15) NOT NULL,
-  Preferred_payment_method_id int UNIQUE NOT NULL
+  Preferred_payment_method_id int NOT NULL
 );
 
 CREATE TABLE data.Payments (
@@ -26,23 +26,23 @@ CREATE TABLE data.Payments (
 
 CREATE TABLE data.Order (
     Id serial PRIMARY KEY,
-    User_id  int UNIQUE NOT NULL,
-    Product_id  int UNIQUE NOT NULL,
+    User_id  int NOT NULL,
+    Product_id  int NOT NULL,
     Pieces int NOT NULL,
-    Address_id  int UNIQUE NOT NULL,
+    Address_id  int NOT NULL,
     Amount money NOT NULL,
-    Payment_type_id  int UNIQUE NOT NULL
+    Payment_type_id  int NOT NULL
 );
 
 CREATE TABLE data.Product (
     Id serial PRIMARY KEY,
     Name text NOT NULL,
-    Brand_id  int UNIQUE NOT NULL,
-    Size_id  int UNIQUE NOT NULL,
-    Gender_id  int UNIQUE NOT NULL,
+    Brand_id  int NOT NULL,
+    Size_id  int NOT NULL,
+    Gender_id  int NOT NULL,
     Price money NOT NULL,
     Quantity int NOT NULL,
-    Subcategory_id  int UNIQUE NOT NULL
+    Subcategory_id  int NOT NULL
 );
 
 CREATE TABLE data.Brand (
@@ -63,7 +63,7 @@ CREATE TABLE data.Gender (
 CREATE TABLE data.Subcategories (
   Id serial PRIMARY KEY,
   Subcategory text,
-  Category_id  int UNIQUE NOT NULL
+  Category_id  int NOT NULL
 );
 
 CREATE TABLE data.Categories (
