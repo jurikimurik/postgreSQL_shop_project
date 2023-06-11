@@ -1,10 +1,10 @@
-create table size
+create table data.size
 (
     id   serial
         primary key,
     size integer
 );
 
-alter table size
+alter table data.size
     owner to postgres;
 

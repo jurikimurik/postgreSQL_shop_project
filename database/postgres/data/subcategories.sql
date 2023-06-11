@@ -1,4 +1,4 @@
-create table subcategories
+create table data.subcategories
 (
     id          serial
         primary key,
@@ -6,10 +6,10 @@ create table subcategories
     category_id integer not null
         unique
         constraint category_id_fk
-            references categories
+            references data.categories
             on update cascade on delete restrict
 );
 
-alter table subcategories
+alter table data.subcategories
     owner to postgres;
 

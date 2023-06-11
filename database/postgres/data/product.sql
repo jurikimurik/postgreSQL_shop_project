@@ -1,4 +1,4 @@
-create table product
+create table data.product
 (
     id             serial
         primary key,
@@ -6,27 +6,27 @@ create table product
     brand_id       integer not null
         unique
         constraint brand_id_fk
-            references brand
+            references data.brand
             on update cascade on delete restrict,
     size_id        integer not null
         unique
         constraint size_id_fk
-            references size
+            references data.size
             on update cascade on delete restrict,
     gender_id      integer not null
         unique
         constraint gender_id_fk
-            references gender
+            references data.gender
             on update cascade on delete restrict,
     price          money   not null,
     quantity       integer not null,
     subcategory_id integer not null
         unique
         constraint subcategory_id_fk
-            references subcategories
+            references data.subcategories
             on update cascade on delete restrict
 );
 
-alter table product
+alter table data.product
     owner to postgres;
 

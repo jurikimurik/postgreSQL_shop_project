@@ -1,10 +1,10 @@
-create table brand
+create table data.brand
 (
     id    serial
         primary key,
     brand text
 );
 
-alter table brand
+alter table data.brand
     owner to postgres;
 

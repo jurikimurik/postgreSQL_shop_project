@@ -1,4 +1,4 @@
-create table "user"
+create table data."user"
 (
     id                          serial
         primary key,
@@ -9,10 +9,10 @@ create table "user"
     preferred_payment_method_id integer     not null
         unique
         constraint payment_method_fk
-            references payments
+            references data.payments
             on update cascade on delete restrict
 );
 
-alter table "user"
+alter table data."user"
     owner to postgres;
 

@@ -1,4 +1,4 @@
-create table address
+create table data.address
 (
     id               serial
         primary key,
@@ -10,10 +10,10 @@ create table address
     user_id          integer not null
         unique
         constraint user_id_fk
-            references "user"
+            references data."user"
             on update cascade on delete restrict
 );
 
-alter table address
+alter table data.address
     owner to postgres;
 

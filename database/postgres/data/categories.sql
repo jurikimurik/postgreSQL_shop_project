@@ -1,10 +1,10 @@
-create table categories
+create table data.categories
 (
     id       serial
         primary key,
     category text
 );
 
-alter table categories
+alter table data.categories
     owner to postgres;
 
