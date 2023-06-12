@@ -1,3 +1,5 @@
+CREATE DATABASE shop; //przydałoby się ;)
+
 CREATE SCHEMA data;
 
 CREATE TABLE data.Address (
