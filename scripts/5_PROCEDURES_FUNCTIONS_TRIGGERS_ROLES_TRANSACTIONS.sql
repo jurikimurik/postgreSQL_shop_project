@@ -37,7 +37,7 @@ BEGIN
 END;
 $$;
 
-CREATE TRIGGER check_piecies_trigger
+CREATE TRIGGER check_pieces_trigger
   BEFORE INSERT
   ON data.order
   FOR EACH
