@@ -1,4 +1,5 @@
 CREATE DATABASE shop; //przydałoby się ;)
+\c shop;
 
 CREATE SCHEMA data;
 
