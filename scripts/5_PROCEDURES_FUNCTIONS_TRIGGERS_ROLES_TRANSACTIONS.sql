@@ -37,7 +37,7 @@ BEGIN
 END;
 $$;
 
-CREATE TRIGGER check_age_trigger
+CREATE TRIGGER check_piecies_trigger
   BEFORE INSERT
   ON data.order
   FOR EACH
