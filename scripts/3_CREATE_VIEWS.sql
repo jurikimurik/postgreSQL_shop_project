@@ -3,7 +3,7 @@ CREATE OR REPLACE VIEW join_left AS
     LEFT JOIN shop.data.categories
     ON shop.data.subcategories.category_id = shop.data.categories.id;
 
-CREATE OR REPLACE VIEW join_prawy AS
+CREATE OR REPLACE VIEW join_right AS
     SELECT brand.brand,product.name FROM shop.data.brand
     RIGHT JOIN shop.data.product
     ON shop.data.brand.id=shop.data.product.brand_id;
