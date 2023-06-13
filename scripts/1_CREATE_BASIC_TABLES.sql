@@ -10,6 +10,8 @@ CREATE TABLE data.Address (
     Frame_number integer,
     Apartment_number integer,
     Zip_code text,
+    City text,
+    Country text,
     User_id int NOT NULL
 );
 
