@@ -59,6 +59,7 @@ INSERT INTO
   data.payments (payment_method)
 VALUES
   ('Webmoney'),
+  ('Blik'),
   ('Qiwi');
 
 COMMIT;
