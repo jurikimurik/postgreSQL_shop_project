@@ -51,4 +51,4 @@ CREATE OR REPLACE VIEW view_limit_offset AS
 
 CREATE OR REPLACE VIEW view_subquery AS
     SELECT name,price,brand_id FROM shop.data.product
-    where price IN (SELECT price FROM product where brand_id>15 and quantity>50);
+    where price IN (SELECT price FROM shop.data.product where brand_id>15 and quantity>50);
