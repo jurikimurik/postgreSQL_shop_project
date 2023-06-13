@@ -7,6 +7,8 @@ create table data.address
     frame_number     integer,
     apartment_number integer,
     zip_code         text,
+    city             text,
+    country          text,
     user_id          integer not null
         unique
         constraint user_id_fk
