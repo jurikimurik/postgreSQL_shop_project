@@ -186,7 +186,7 @@ insert into data.address (street, building_number, frame_number, apartment_numbe
 insert into data.address (street, building_number, frame_number, apartment_number, zip_code, city, country, user_id) values ('East', 941, 4, 44, '0587-32', 'Yuanquan', 'China', 27);
 insert into data.address (street, building_number, frame_number, apartment_number, zip_code, city, country, user_id) values ('Cardinal', 486, 10, 161, '47-203', 'Bellavista', 'Mexico', 25);
 insert into data.address (street, building_number, frame_number, apartment_number, zip_code, city, country, user_id) values ('Lillian', 366, 4, 120, '664-705', 'Lupon', 'Philippines', 4);
-insert into data.address (street, building_number, frame_number, apartment_number, zip_code, city, country, user_id) values ('Lillian', 307, 2, 55, '582-8673', 'Abakaliki', 'Nigeria', , 3);
+insert into data.address (street, building_number, frame_number, apartment_number, zip_code, city, country, user_id) values ('Lillian', 307, 2, 55, '582-8673', 'Abakaliki', 'Nigeria', 3);
 insert into data.address (street, building_number, frame_number, apartment_number, zip_code, city, country, user_id) values ('Florence', 837, 4, 16, '8573-857', 'Sinfra', 'Ivory Coast', 2);
 insert into data.product (name, brand_id, size_id, gender_id, price, quantity, subcategory_id) values ('Ibuprofen', 7, 22, 28, '$38.05', 68, 25);
 insert into data.product (name, brand_id, size_id, gender_id, price, quantity, subcategory_id) values ('Zep Provisions Pot and Pan Premium', 17, 23, 26, '$83.51', 35, 16);
